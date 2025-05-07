@@ -80,7 +80,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Audio-based music structure analysis (MSA) remains a fundamental challenge in the field of MIR. Recent studies have shown promising results by fine-tuning pre-trained music foundation models for structural analysis tasks. However, foundation models are pre-trained with a higher temporal resolution and a shorter audio window, which are not well-suited for MSA. As a result, it leads to inefficiencies and prediction biases. In this paper, we propose a \textit{temporal adaption} method applied to music foundation models for the MSA task, which enables the model to efficiently analyze full song length music audio in a single pass by (1) audio window length extension and (2) low-resolution adaptation. Experiments on the Harmonix Set and RWC-Pop datasets demonstrate that the temporal adaptation method significantly improves the function and boundary prediction accuracy, while maintaining comparable memory usage and inference speed. 
+            Audio-based music structure analysis (MSA) is an essential task in Music Information Retrieval that remains challenging due to the complexity and variability of musical form. Recent advances highlight the potential of fine-tuning pre-trained music foundation models for MSA tasks. However, these models are typically trained with high temporal feature resolution and short audio windows, which limits their efficiency and introduces bias when applied to long-form audio. This paper presents a temporal adaptation approach for fine-tuning music foundation models tailored to MSA. Our method enables efficient analysis of full-length songs in a single forward pass by incorporating two key strategies: (1) audio window extension and (2) low-resolution adaptation. Experiments on the Harmonix Set and RWC-Pop datasets show that our method significantly improves both boundary detection and structural function prediction, while maintaining comparable memory usage and inference speed. 
           </p>
         </div>
       </div>
@@ -89,7 +89,54 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section" id="audio-examples">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Audio Examples</h2>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content">
+          <p class="has-text-justified">
+            Listen to some audio examples demonstrating the results of our temporal adaptation approach for music structure analysis.
+          </p>
 
+          <div class="audio-item" style="margin-bottom: 20px;">
+            <h4 class="subtitle is-5">Example 1: Original Music Segment</h4>
+            <p>Description for the first audio sample, e.g., highlighting a specific characteristic before adaptation.</p>
+            <audio controls style="width: 100%;">
+              <source src="static/audio/your_audio_file_1.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+
+          <div class="audio-item" style="margin-bottom: 20px;">
+            <h4 class="subtitle is-5">Example 2: Segment Processed with Our Method</h4>
+            <p>Description for the second audio sample, e.g., showing improvements after applying the model.</p>
+            <audio controls style="width: 100%;">
+              <source src="static/audio/your_audio_file_2.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+
+          <div class="audio-item" style="margin-bottom: 20px;">
+            <h4 class="subtitle is-5">Example 3: Another Case Study</h4>
+            <p>Further details about this particular audio example.</p>
+            <audio controls style="width: 100%;">
+              <source src="static/audio/your_audio_file_3.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>BibTex Code Here</code></pre>
+  </div>
+</section>
 
 
 <!--BibTex citation -->
